@@ -408,7 +408,7 @@ ul.color_schemes li {
   background: -o-linear-gradient(rgba(97, 88, 105, 0.35), rgba(97, 88, 105, 0.35)), url(../img/banner-section/section-background.jpg);
   background: linear-gradient(rgba(97, 88, 105, 0.35), rgba(97, 88, 105, 0.35)), url(../img/banner-section/section-background.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position-y: 100%;
   background-size: cover; }
 
 .header__nav {
@@ -500,10 +500,9 @@ ul.color_schemes li {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-top: 52px;
+  margin-top: 150px;
   color: #fff;
   text-align: center;
-  border: 8px solid #fff;
   padding: 88px 132px 72px 132px; }
 
 .header__title {
@@ -589,7 +588,6 @@ ul.color_schemes li {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   color: #4F3566;
-  text-transform: capitalize;
   white-space: nowrap;
   margin-bottom: 32px; }
   .countdown__title strong {

@@ -7,8 +7,8 @@ $(document).ready(function () {
 
   //Coundown
   $('.countdown').downCount({
-    date: '08/20/2023 12:00:00',
-    offset: +10
+    date: '12/03/2023 12:00:00',
+    offset: null
   });
   // Scroll to ID  
   function scrollToId(str) {
@@ -32,9 +32,7 @@ $(document).ready(function () {
   //To top
 
   (function scrollTop() {
-
     const btn = $('.to-top');
-
     $(window).scroll(function () {
       if ($(window).scrollTop() > 300) {
         btn.fadeIn();
@@ -42,14 +40,12 @@ $(document).ready(function () {
         btn.fadeOut();
       }
     });
-
     btn.on('click', function (e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: 0 }, '300');
     });
 
   }());
-
   //Mobile menu
   (function mobileMenu() {
 
