@@ -131,7 +131,7 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="slick-next arrow-right--colored"></button>'
   });
 
-  //Fancybox
+  // Fancybox
   // $(".fancy").fancybox({
   //   'hideOnContentClick': true
   //   });
@@ -168,10 +168,6 @@ $(document).ready(function () {
         spaceBetween: 32,
       },
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
@@ -185,87 +181,4 @@ $(document).ready(function () {
   });
 
   $('.swiper-slide-active').siblings('.swiper-slide').css('margin-right', '32px');
-
-  //Init map
-  (function initeMap() {
-
-    let ceremonyMap,
-      receptionMap;
-
-    $('.styleswitch').on('click', function () {
-      $('.map').empty();
-      init();
-    });
-
-    ymaps.ready(init);
-
-    function init() {
-
-      //Switch map icon
-      let defaultIcon = 'img/map/icon--' + $('head link[id="skins"]').attr('data-color') + '.svg';
-      console.log(defaultIcon);
-
-      //Ceremony address map
-      ceremonyMap = new ymaps.Map('address__map--ceremony', {
-        center: Configs.address,
-        zoom: Configs.mapZoom,
-        controls: []
-      }, {
-        searchControlProvider: 'yandex#search'
-      })
-
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
-
-        myPlacemark = new ymaps.Placemark(ceremonyMap.getCenter(), {
-          hintContent: 'Mark',
-          balloonContent: 'Mark'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: defaultIcon,
-          iconImageSize: [63, 83],
-        })
-
-      ceremonyMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
-
-      ceremonyMap.geoObjects
-        .add(myPlacemark);
-
-      //END ceremony address map
-
-
-      //Reception address map
-      receptionMap = new ymaps.Map('address__map--reception', {
-        center: Configs.address,
-        zoom: Configs.mapZoom,
-        controls: []
-      }, {
-        searchControlProvider: 'yandex#search'
-      });
-
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
-
-        myPlacemark = new ymaps.Placemark(receptionMap.getCenter(), {
-          hintContent: 'Mark',
-          balloonContent: 'Mark'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: defaultIcon,
-          iconImageSize: [63, 83],
-        }),
-
-        receptionMap.panes.get('ground').getElement().style.filter = 'grayscale(80%)';
-
-      receptionMap.geoObjects
-        .add(myPlacemark);
-
-      //END reception address map
-    }
-
-  }());
-
-
 });
