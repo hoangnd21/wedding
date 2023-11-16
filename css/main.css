@@ -952,12 +952,14 @@ ul.color_schemes li {
   top: -60px;
   left: 60px;
   background-image: url("../img/happy-couple/groom.jpg");
+  background-size: contain;
 }
 
 .couple__image-bride--right::after {
   top: -60px;
   right: 60px;
-  background-image: url("../img/happy-couple/bride.jpg");
+  background-image: url("../img/happy-couple/bride-2.jpg");
+  background-size: cover;
 }
 
 /*1.2 END Couple*/
@@ -1185,7 +1187,6 @@ ul.color_schemes li {
 @media only screen and (min-width: 1400px) {
   .story__slider-image img {
     max-width: 576px !important;
-    height: 440px !important;
   }
 }
 
