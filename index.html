@@ -139,7 +139,7 @@
 		<h2 class="s-title text--colored"> Câu chuyện tình iu</h2>
 		<div class="story__slider">
 			<div class="story__slide">
-				<div class="story__slider-image"><img class="story__slider-image img-responsive" src="img/slider/1.jpg"
+				<div class="story__slider-image"><img class="story__slider-image img-responsive" data-src="img/slider/1.jpg"
 																							alt="Photo"/></div>
 				<div class="story__slider-text">
 					<div class="slider__head-text text--colored">
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 			<div class="story__slide">
-				<div class="story__slider-image"><img class="img-responsive" src="img/slider/2.jpg" alt="Photo"/></div>
+				<div class="story__slider-image"><img class="img-responsive" data-src="img/slider/2.jpg" alt="Photo"/></div>
 				<div class="story__slider-text">
 					<div class="slider__head-text">
 						<h3 class="couple__title">Bắt đầu hẹn hò</h3>
@@ -170,7 +170,7 @@
 				</div>
 			</div>
 			<div class="story__slide">
-				<div class="story__slider-image"><img class="img-responsive" src="img/slider/3.jpg" alt="Photo"/></div>
+				<div class="story__slider-image"><img class="img-responsive" data-src="img/slider/3.jpg" alt="Photo"/></div>
 				<div class="story__slider-text">
 					<div class="slider__head-text">
 						<h3 class="couple__title">Cô ấy đã đồng ý!</h3>
@@ -191,32 +191,32 @@
 		<div class="photos__slider swiper-wrapper">
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/DSC03381_1.jpg">
-					<img class="img-responsive" src="img/photo-slider/DSC03381_1.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/DSC03381_1.jpg" alt="Photo"/>
 				</a>
 			</div>
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/DSC03518_1.jpg">
-					<img class="img-responsive" src="img/photo-slider/DSC03518_1.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/DSC03518_1.jpg" alt="Photo"/>
 				</a>
 			</div>
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/DSC03739_1.jpg">
-					<img class="img-responsive" src="img/photo-slider/DSC03739_1.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/DSC03739_1.jpg" alt="Photo"/>
 				</a>
 			</div>
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/IMG_2852.jpg">
-					<img class="img-responsive" src="img/photo-slider/IMG_2852.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/IMG_2852.jpg" alt="Photo"/>
 				</a>
 			</div>
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/IMG_2857.jpg">
-					<img class="img-responsive" src="img/photo-slider/IMG_2857.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/IMG_2857.jpg" alt="Photo"/>
 				</a>
 			</div>
 			<div class="photo swiper-slide">
 				<a target="_blank" href="img/photo-slider/fullsize/IMG_3037.jpg">
-					<img class="img-responsive" src="img/photo-slider/IMG_3037.jpg" alt="Photo"/>
+					<img class="img-responsive" data-src="img/photo-slider/IMG_3037.jpg" alt="Photo"/>
 				</a>
 			</div>
 		</div>
@@ -267,7 +267,7 @@
 			<h2 class="support__title">QR Parking Lot</h2>
 		</div>
 		<div class="support__btn-wrap">
-			<img src="/img/QR.png" alt="qr" class="support__btn-img">
+			<img data-src="/img/QR.png" alt="qr" class="support__btn-img">
 		</div>
 	</div>
 </section>
@@ -276,7 +276,7 @@
 	<div class="footer__content">
 		<span class="footer__name jeremy text--colored">Hoang</span>
 		<div class="footer__image">
-			<img src="img/footer/photo.jpg" alt="Photo"/>
+			<img data-src="img/footer/photo.jpg" alt="Photo"/>
 		</div>
 		<span class="footer__name diana text--colored">Thao</span>
 	</div>
@@ -287,8 +287,9 @@
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
 				integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
 				crossorigin="anonymous"></script>
-<script src="js/counter.js"></script>
-<script src="js/scripts.js"></script>
+<script defer src="js/counter.js"></script>
+<script defer src="js/scripts.js"></script>
+<script defer src="js/lazy.js"></script>
 </body>
 
 </html>

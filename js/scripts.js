@@ -5,7 +5,7 @@ $(document).ready(function () {
     mapZoom: 14
   }
 
-  //Coundown
+  //Countdown
   $('.countdown').downCount({
     date: '12/03/2023 12:00:00',
     offset: null
