@@ -15,7 +15,6 @@
 	font-style: normal;
 	src: url("../fonts/Roboto-Bold.ttf");
 	src: url("../fonts/Roboto-Bold.ttf?#iefix") format("embedded-opentype"),
-	url("../fonts/Roboto-Bold.woff") format("ttf"),
 	url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
 
@@ -133,18 +132,13 @@ a:hover {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	background: none;
 	text-transform: uppercase;
-	background-color: #4F3566;
-	border: none;
+	background: #4F3566 none;
 	display: block;
 	-webkit-transition: all .3s ease-out;
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
-	padding-right: 64px;
-	padding-left: 40px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding: 12px 64px 12px 40px;
 	position: relative;
 	color: #fff;
 	border: 2px solid transparent;
@@ -174,7 +168,6 @@ a:hover {
 	background-color: #4F3566;
 	color: #fff;
 	border: 2px solid #F5A8A8;
-	color: #fff;
 }
 
 .btn:disabled {
@@ -293,11 +286,8 @@ a:hover {
 	display: block;
 	color: #fff;
 	position: relative;
-	background: none;
-	border: none;
-	padding: 12px 40px;
-	padding-right: 64px;
-	background-color: #4F3566;
+	padding: 12px 64px 12px 40px;
+	background: #4F3566 none;
 	font-size: 14px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -391,7 +381,6 @@ a:hover {
 .switcher__color span {
 	color: #fff;
 	font-size: 16px;
-	text-align: center;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -465,48 +454,6 @@ ul.color_schemes li {
 	display: inline-block;
 	margin: 5px 10px;
 	cursor: pointer;
-}
-
-.styleswitch {
-	display: block;
-	width: 30px;
-	height: 30px;
-}
-
-.styleswitch.color-1 {
-	background: #e2b123;
-}
-
-.styleswitch.color-2 {
-	background: #f20012;
-}
-
-.styleswitch.color-3 {
-	background: #038eda;
-}
-
-.styleswitch.color-4 {
-	background: #15b5b0;
-}
-
-.styleswitch.color-5 {
-	background: #19b963;
-}
-
-.styleswitch.color-6 {
-	background: #cccc00;
-}
-
-.styleswitch.color-7 {
-	background: #4F3566;
-}
-
-.styleswitch.color-8 {
-	background: #ff5411;
-}
-
-.styleswitch.color-9 {
-	background: #3d8c40;
 }
 
 /*1.1 Header*/
@@ -595,8 +542,7 @@ ul.color_schemes li {
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 20px;
-	padding: 0;
-	padding-bottom: 4px;
+	padding: 0 0 4px;
 	text-decoration: none;
 }
 
@@ -857,19 +803,6 @@ ul.color_schemes li {
 	margin-bottom: 24px;
 }
 
-.couple__text-head::after {
-	content: "";
-	position: absolute;
-	width: 112px;
-	height: 1px;
-	background-color: #4F3566;
-	bottom: 0;
-	left: 0;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
 .couple__title {
 	font-weight: 700;
 	font-size: 32px;
@@ -902,6 +835,7 @@ ul.color_schemes li {
 	font-size: 16px;
 	line-height: 24px;
 	margin-bottom: 10px;
+	text-align: justify;
 }
 
 .couple__groom {
@@ -1118,7 +1052,7 @@ ul.color_schemes li {
 	margin-bottom: 24px;
 }
 
-.slider__head-text::after {
+.slider__head-text::after, .couple__text-head::after, .venues__card-head::after  {
 	content: "";
 	position: absolute;
 	width: 112px;
@@ -1406,7 +1340,7 @@ ul.color_schemes li {
 	display: none;
 }
 
-.swiper-button-prev::before {
+.swiper-button-prev::before, .swiper-button-next::before{
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -1422,26 +1356,12 @@ ul.color_schemes li {
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
 }
+.swiper-button-next::before {
+	background-image: url("../img/slider/arrow-right.svg");
+}
 
 .swiper-button-next::after {
 	display: none;
-}
-
-.swiper-button-next::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url("../img/slider/arrow-right.svg");
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: 3;
-	-webkit-transition: all .3s ease-out;
-	-o-transition: all .3s ease-out;
-	transition: all .3s ease-out;
 }
 
 .buttons-container {
@@ -1599,19 +1519,6 @@ ul.color_schemes li {
 	margin-bottom: 24px;
 }
 
-.venues__card-head::after {
-	content: "";
-	position: absolute;
-	width: 112px;
-	height: 1px;
-	background-color: #4F3566;
-	bottom: 0;
-	left: 0;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
 .venues__card-title {
 	font-weight: 700;
 	font-size: 32px;
@@ -1680,10 +1587,7 @@ ul.color_schemes li {
 }
 
 .reception__card {
-	padding-top: 34px;
-	padding-right: 174px;
-	padding-left: 82px;
-	padding-bottom: 34px;
+	padding: 34px 174px 34px 82px;
 }
 
 /*1.6 END Venues*/
@@ -1715,11 +1619,10 @@ ul.color_schemes li {
 	.venues__card {
 		max-width: 90%;
 		width: 90%;
-		margin: 0 auto;
 		padding-right: 20px;
 		padding-left: 20px;
 		text-align: center;
-		margin-bottom: 20px;
+		margin: 0 auto 20px;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
@@ -1803,10 +1706,6 @@ ul.color_schemes li {
 	justify-content: flex-end;
 }
 
-.rvsp__forrm-wrap {
-	margin-right: 15px;
-}
-
 .rvsp__title {
 	font-size: 56px;
 	line-height: 88px;
@@ -1827,14 +1726,6 @@ ul.color_schemes li {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-}
-
-.iputs__group::first-child {
-	margin-right: 32px;
-}
-
-.form-control {
-	width: 256px;
 }
 
 [class*=" bmd-label"],
@@ -1866,21 +1757,6 @@ ul.color_schemes li {
 	border-bottom: 1px solid #4F3566;
 	width: 100%;
 	cursor: pointer;
-}
-
-.iputs__group {
-	position: relative;
-	padding-top: 1.8rem;
-	width: 256px;
-}
-
-.iputs__group label {
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.iputs__group:first-child {
-	margin-right: 32px;
 }
 
 .select-dropdown {
@@ -2016,9 +1892,6 @@ ul.color_schemes li {
 		justify-content: center;
 	}
 	
-	.rvsp__forrm-wrap {
-		margin-right: 0;
-	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -2028,18 +1901,6 @@ ul.color_schemes li {
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-	}
-	
-	.iputs__group {
-		width: 500px;
-	}
-	
-	.iputs__group:first-child {
-		margin-right: 0;
-	}
-	
-	.iputs__group input {
-		width: 100%;
 	}
 	
 	.selected__item {
@@ -2081,24 +1942,6 @@ ul.color_schemes li {
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	.iputs__group {
-		width: 400px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.iputs__group {
-		width: 300px;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.iputs__group {
-		width: 280px;
-	}
-}
-
 /* 1.6 END RVSP media*/
 /*1.7 Support*/
 .support__title {
@@ -2122,12 +1965,6 @@ ul.color_schemes li {
 	width: 192px;
 	height: 1px;
 	background-color: #4F3566;
-}
-
-.support__btn-sescr {
-	font-size: 16px;
-	line-height: 24px;
-	color: #615869;
 }
 .support__btn-img {
 	max-width: 100%;
@@ -2153,11 +1990,6 @@ ul.color_schemes li {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-
-.support__btn-sescr {
-	display: block;
-	margin-bottom: 16px;
 }
 
 .support__btn {
