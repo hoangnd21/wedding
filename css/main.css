@@ -1977,7 +1977,7 @@ ul.color_schemes li {
 
 .support {
 	padding-top: 112px;
-	padding-bottom: 185px;
+	padding-bottom: 75px;
 }
 
 .support .container {
@@ -2002,7 +2002,7 @@ ul.color_schemes li {
 }
 
 .support__title-wrap {
-	max-width: 360px;
+	max-width: 500px;
 }
 
 .support__btn-wrap {
