@@ -1657,8 +1657,6 @@ ul.color_schemes li {
 	}
 }
 
-/*1.6 END Venues media*/
-/* 1.6 RVSP */
 .rvsp {
 	padding-top: 96px;
 	padding-bottom: 144px;
@@ -1678,6 +1676,10 @@ ul.color_schemes li {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.wishes::before {
+	right: 0;
+	left: unset;
+}
 
 .rvsp::after {
 	content: "";
@@ -1694,6 +1696,9 @@ ul.color_schemes li {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.wishes::after {
+	left: 55%;
+}
 
 .rvsp .container {
 	display: -webkit-box;
@@ -1704,6 +1709,12 @@ ul.color_schemes li {
 	-webkit-justify-content: flex-end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
+}
+.wishes {
+	margin-top: 200px;
+}
+.wishes .container {
+	justify-content: flex-start;
 }
 
 .rvsp__title {
@@ -1721,12 +1732,6 @@ ul.color_schemes li {
 	display: block;
 }
 
-.rvsp__inputs-group {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-}
 
 [class*=" bmd-label"],
 [class^=bmd-label] {
@@ -2099,7 +2104,7 @@ ul.color_schemes li {
 }
 
 .footer__image::after {
-	content: "03/13/2023";
+	content: "03/12/2023";
 	position: absolute;
 	bottom: -38px;
 	left: 50%;
@@ -2133,5 +2138,6 @@ ul.color_schemes li {
 		display: none;
 	}
 }
-
-/* 1.8 END Footer media */
+iframe {
+	max-width: 100%;
+}
