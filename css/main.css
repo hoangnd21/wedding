@@ -998,7 +998,6 @@ ul.color_schemes li {
 .story__slider {
 	position: relative;
 	margin-left: 107px;
-	position: relative;
 	margin-top: 130px;
 }
 
@@ -1679,6 +1678,7 @@ ul.color_schemes li {
 .wishes::before {
 	right: 0;
 	left: unset;
+	background-image: url("../img/feedback-section/wishes-background.jpg");
 }
 
 .rvsp::after {
@@ -1697,7 +1697,7 @@ ul.color_schemes li {
 	background-repeat: no-repeat;
 }
 .wishes::after {
-	left: 55%;
+	background-image: unset;
 }
 
 .rvsp .container {
