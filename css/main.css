@@ -1879,6 +1879,9 @@ ul.color_schemes li {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	.wishes::after {
+		background-image: unset;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
