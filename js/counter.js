@@ -3,7 +3,7 @@
   $.fn.downCount = function (options, callback) {
     const settings = $.extend({
       date: '12/03/2023 10:30:00',
-      offset: null
+      offset: 2
     }, options);
 
     // Throw error if date is not set
